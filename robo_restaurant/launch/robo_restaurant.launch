@@ -2,8 +2,12 @@
 
 <!-- robot wolrd -->
  <include file="$(find my_robot)/launch/world.launch"/>  
-<!---ball chaser-->
+<!-- AMCL node 
+ <include file="$(find robo_restaurant)/launch/amcl.launch"/>
+--> 
+<!--ball chaser >
  <include file="$(find ball_chaser)/launch/ball_chaser.launch" />
+ -->
   <!--RVIZ-->
   <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/robo_restaurant/robo_restaurant/rviz_config.rviz"/>
 
