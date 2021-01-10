@@ -2,9 +2,9 @@
 
 <!-- robot wolrd -->
  <include file="$(find my_robot)/launch/world.launch"/>  
-<!-- AMCL node 
+<!-- AMCL node
  <include file="$(find robo_restaurant)/launch/amcl.launch"/>
---> 
+ --> 
 <!--ball chaser >
  <include file="$(find ball_chaser)/launch/ball_chaser.launch" />
  -->
