@@ -4,10 +4,12 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Status1
         - /Grid1
         - /Grid1/Offset1
+        - /RobotModel1
+        - /LaserScan1
         - /Map1
-        - /Map1/Status1
         - /Map1/Position1
         - /Map1/Orientation1
       Splitter Ratio: 0.5
@@ -137,8 +139,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.406286389
-        Min Value: 0.343060881
+        Max Value: 0.403530538
+        Min Value: 0.338531256
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -159,7 +161,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.0299999993
       Style: Flat Squares
-      Topic: /scan
+      Topic: /robo_restaurant/laser/scan
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -271,5 +273,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 60
-  Y: -9
+  X: 59
+  Y: -35
