@@ -6,3 +6,5 @@ This project contains
 ## Service for sending move command to robot  
 ## A node to detect a white object and hence to make a call to velocity service 
 ![](image.png)
+### Robot localised with MAP
+![](rviz_map.png)
