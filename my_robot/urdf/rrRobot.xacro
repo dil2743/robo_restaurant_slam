@@ -177,7 +177,7 @@
    <joint name="robot_base_robot_back_support" type="fixed">
     <parent link="robot_base"/>
     <child link="robot_back_support"/>
-    <origin rpy="0  0  0" xyz="0    -0.27   0.475"/>
+    <origin rpy="0  0  0" xyz="0    0.27   0.475"/>
     <axis xyz="0  0  0"/>
     <limit effort="0" lower="0" upper="0" velocity="0"/>
   </joint>
@@ -231,7 +231,7 @@
   <joint name="robot_base_front_caster" type="fixed">
     <parent link="robot_base"/>
     <child link="front_caster"/>
-    <origin rpy="0  0  0" xyz="0     0.245   -0.118"/>
+    <origin rpy="0  0  0" xyz="0     -0.245   -0.118"/>
     <axis xyz="0  0  0"/>
     <limit effort="0" lower="0" upper="0" velocity="0"/>
   </joint>
@@ -258,7 +258,7 @@
   <joint name="robot_base_back_caster" type="fixed">
     <parent link="robot_base"/>
     <child link="back_caster"/>
-    <origin rpy="0  0  0" xyz="0     -0.245   -0.118"/>
+    <origin rpy="0  0  0" xyz="0     0.245   -0.118"/>
     <axis xyz="0  0  0"/>
     <limit effort="0" lower="0" upper="0" velocity="0"/>
   </joint>
@@ -360,7 +360,7 @@
     </visual>
   </link>
   <joint type="fixed" name="camera_joint">
-    <origin xyz="0.0 0.285 0.060" rpy="0 0 1.5707"/>
+    <origin xyz="0.0 -0.285 0.060" rpy="0 0 -1.5707"/>
     <child link="camera"/>
     <parent link="robot_base"/>
     <axis xyz="1 0 0" rpy="0 0 0"/>
