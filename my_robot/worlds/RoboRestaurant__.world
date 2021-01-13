@@ -1944,28 +1944,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='my_robot'>
-        <pose frame=''>2.1 0 0.18 0 0 -0.15113</pose>
-        <scale>1 1 1</scale>
-        <link name='Dummy_link'>
-          <pose frame=''>2.1 0 0.18 0 0 -0.15113</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='left_wheel'>
-          <pose frame=''>2.42624 -0.049683 0.055 0 0 -0.15113</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='right_wheel'>
-          <pose frame=''>1.77376 0.049683 0.055 0 0 -0.15113</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='restaurants'>
         <pose frame=''>0.32728 -1.509 0 0 -0 0</pose>
         <scale>1 1 1</scale>
