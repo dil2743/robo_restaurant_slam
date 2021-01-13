@@ -3,12 +3,12 @@
 <launch>
 
   <!-- Robot pose -->
-  <arg name="x" default="2.1"/>
-  <arg name="y" default="0"/>
+  <arg name="x" default="9.010639"/>
+  <arg name="y" default="1.947787"/>
   <arg name="z" default="0.18"/>
   <arg name="roll" default="0.0"/>
   <arg name="pitch" default="0.0"/>
-  <arg name="yaw" default="3.10"/>
+  <arg name="yaw" default="-0.073365"/>
 
   <!-- Launch other relevant files-->
   <include file="$(find my_robot)/launch/robot_description.launch"/>
