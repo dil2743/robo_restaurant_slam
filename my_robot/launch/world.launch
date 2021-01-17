@@ -4,7 +4,7 @@
 
   <!-- Robot pose -->
   <arg name="x" default="8.845334"/>
-  <arg name="y" default="561711"/>
+  <arg name="y" default="1.561711"/>
   <arg name="z" default="0.18"/>
   <arg name="roll" default="0.0"/>
   <arg name="pitch" default="0.0"/>
