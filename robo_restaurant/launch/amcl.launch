@@ -1,12 +1,12 @@
-
 <launch>
-
-<!-- map server -->
-  <!-- map file this will be utilised by amcl -->
+  <!-- map server -->
+  			<!-- map file this will be utilised by amcl -->
 	<arg name="map_file" default="$(find robo_restaurant)/maps/map.yaml"/>
 
   <!-- 	he map_server node provides map data as a ROS service to other nodes such as the 	   amcl node. Here, map_server node will locate the map -->
 	<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+
 <!-- AMCL Node -->
   <node name="amcl" pkg="amcl" type="amcl" output="screen">
 
@@ -21,17 +21,30 @@
     <!-- filter parameters -->
 
 	<param name="min_particles" value="100"/>
-	<param name="max_particles" value="5000"/>
-	<param name="update_min_a" value="0.0001"/>
-	<param name="update_min_d" value="0.000174"/>
-0
+	<param name="max_particles" value="600"/>
+	<param name="update_min_a" value="0.01"/>
+	<param name="update_min_d" value="0.01"/>
+
+      <param name="recovery_alpha_slow " value="0.001" />
+      <param name="recovery_alpha_fast" value="0.1" />
+
     <!-- laser parameters -->
 
-	<param name="laser_min_range" value="-1"/>
 	<param name="laser_max_range" value="-1"/>
-	<param name="laser_max_beams" value="60"/>
 	<param name="laser_z_hit" value="0.95"/>
-	<param name="laser_z_rand" value="0.05"/>
+	<param name="laser_z_short" value="0.1"/>
+	<param name="laser_z_max" value="0.005"/>
+	<param name="laser_z_rand" value="0.5"/>
+	<param name="laser_sigma_hit" value="0.2"/>
+	<param name="laser_lamda_short" value="0.1"/>
+	<param name="laser_model_type" value="likelihood_field"/>
+	<param name="laser_likelihood_max_dist" value="2.0"/>
+	<param name="odom_alpha1" value="0.005"/>
+	<param name="odom_alpha2" value="0.005"/>
+	<param name="odom_alpha3" value="0.010"/>
+	<param name="odom_alpha4" value="0.005"/>
+	<param name="transform_tolerance" value="0.02"/>
+
 
 
 	<param name="initial_pose_x" value="1.568498"/>
