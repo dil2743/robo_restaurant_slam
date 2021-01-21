@@ -18,7 +18,7 @@
 
   <!-- Launch Gazebo World from gazebo ros package launch empty_world-->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="paused" default="true"/>
+    <arg name="paused" default="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="debug" value="false"/>
     <arg name="gui" value="true" />
