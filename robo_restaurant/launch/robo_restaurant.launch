@@ -7,6 +7,6 @@
  <include file="$(find robo_restaurant)/launch/amcl.launch"/>
 
   <!--RVIZ-->
-  <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/robo_restaurant/robo_restaurant/rviz_config.rviz"/> 
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find robo_restaurant)/rviz_config.rviz"/> 
 
 </launch>
