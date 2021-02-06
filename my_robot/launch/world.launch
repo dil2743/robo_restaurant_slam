@@ -14,7 +14,7 @@
   <include file="$(find my_robot)/launch/robot_description.launch"/>
 
   <!-- World File this will include the world file from the relative path  -->
-     <arg name="world_file" default="$(find my_robot)/worlds/Robo_restaurant.world"/>
+     <arg name="world_file" default="$(find my_robot)/worlds/new_world_with_dummy_model.world"/>
 
   <!-- Launch Gazebo World from gazebo ros package launch empty_world-->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
