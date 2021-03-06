@@ -10,7 +10,8 @@ This project contains 3 packages
 
 `robo_restaurant` this conatins  `amcl node`,`localization.launch`, `mapping.lainch` and `teleop.launch`
 
-
+### rtab_file
+* rtab map file can be [found here](https://drive.google.com/file/d/1ey3lfLwPWf3RECPIL1XovqNA-BiyTo9r/view?usp=sharing)
 ## Running the Project
 
 
@@ -29,20 +30,28 @@ $ source devel/setup.bash
 And then run the following command -
 
 ``` bash
-$ roslaunch robo_restaurant robo_restaurant.launch
+$ roslaunch robo_restaurant localization.launch
 ```
-this will launch the `gazebo world` `Rviz` and `amcl_node`
+this will launch the `gazebo world` and `rviz` 
+
+``` bash
+$ roslaunch robo_restaurant mapping.launch
+```
+this will lauch the mapping node 
+``` bash
+$ roslaunch robo_restaurant teleop.launch
+```
+this will launch telepo node
 
 
 Mobile Robot in Gazebo World with Environment Obstacles
 
-<p align="center"> <img src="image/gazebo_world.png"> </p>
+<p align="center"> <img src="https://github.com/dil2743/robo_restaurant_slam/blob/master/image/new_world.jpg"> </p>
 
 Rviz pose estimation 
 
-<p align="center"> <img src="image/wold_and_rviz.png"> </p>
+<p align="center"> <img src="https://github.com/dil2743/robo_restaurant_slam/blob/master/image/rtabmap.PNG"> </p>
 
-<p align="center"> <img src="image/robot_pose_navGole.png"> </p>
 
 Helpful resource for better understanding AMCL [here](
 http://roboticsknowledgebase.com/wiki/state-estimation/adaptive-monte-carlo-localization/)
